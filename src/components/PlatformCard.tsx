@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 interface PlatformCardProps {
   platform: {
     name: string;
-    icon: string;
+    icon: string | React.ComponentType<any>;
     color: string;
     description: string;
   };
@@ -24,7 +24,7 @@ export const PlatformCard = ({ platform, selected, onClick }: PlatformCardProps)
     >
       <div className="flex flex-col items-center text-center space-y-4">
         <div className={cn("text-4xl", platform.color)}>
-          {platform.icon}
+          {typeof platform.icon === 'string' ? platform.icon : <platform.icon size={32} />}
         </div>
         <div>
           <h3 className="font-semibold text-lg mb-2">{platform.name}</h3>

@@ -13,7 +13,7 @@ type AppStep = "hero" | "platform" | "setup" | "contest" | "results";
 const platforms = [
   {
     name: "Facebook",
-    icon: "📘",
+    icon: Facebook,
     color: "text-blue-600",
     description: "Run contests on Facebook posts and get engagement"
   },
