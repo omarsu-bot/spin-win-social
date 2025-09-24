@@ -6,32 +6,33 @@ import { SpinWheel } from "@/components/SpinWheel";
 import { WinnerDisplay } from "@/components/WinnerDisplay";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Facebook, Instagram, Youtube, Music } from "lucide-react";
+import { ArrowLeft } from "lucide-react";
+import { FaFacebook, FaInstagram, FaTiktok, FaYoutube } from "react-icons/fa";
 
 type AppStep = "hero" | "platform" | "setup" | "contest" | "results";
 
 const platforms = [
   {
     name: "Facebook",
-    icon: Facebook,
+    icon: FaFacebook,
     color: "text-blue-600",
     description: "Run contests on Facebook posts and get engagement"
   },
   {
     name: "Instagram",
-    icon: Instagram,
+    icon: FaInstagram,
     color: "text-pink-600",
     description: "Pick winners from Instagram post comments"
   },
   {
     name: "TikTok",
-    icon: Music,
+    icon: FaTiktok,
     color: "text-black",
     description: "Engage your TikTok audience with fun contests"
   },
   {
     name: "YouTube",
-    icon: "📺",
+    icon: FaYoutube,
     color: "text-red-600",
     description: "Select winners from YouTube video comments"
   }
