@@ -6,7 +6,7 @@ import { SpinWheel } from "@/components/SpinWheel";
 import { WinnerDisplay } from "@/components/WinnerDisplay";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { ArrowLeft, Facebook, Instagram, Youtube } from "lucide-react";
+import { ArrowLeft, Facebook, Instagram, Youtube, Music } from "lucide-react";
 
 type AppStep = "hero" | "platform" | "setup" | "contest" | "results";
 
@@ -25,7 +25,7 @@ const platforms = [
   },
   {
     name: "TikTok",
-    icon: "🎵",
+    icon: Music,
     color: "text-black",
     description: "Engage your TikTok audience with fun contests"
   },
