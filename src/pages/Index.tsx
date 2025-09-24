@@ -19,7 +19,7 @@ const platforms = [
   },
   {
     name: "Instagram",
-    icon: "📷",
+    icon: Instagram,
     color: "text-pink-600",
     description: "Pick winners from Instagram post comments"
   },
